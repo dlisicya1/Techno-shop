@@ -1,0 +1,19 @@
+.order {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.cart-btn {
+    background-color: #ff6f61;
+    border: none;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.cart-btn:hover {
+    background-color: #e55b4f;
+}
