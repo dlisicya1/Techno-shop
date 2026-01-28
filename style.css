@@ -134,4 +134,18 @@ body {
     .product-card {
         width: 90%;
     }
+
+
+}
+
+header.fixed {
+    position: fixed;
+    /* Фіксоване позиціонування */
+    top: 0;
+    /* Закріплено зверху */
+    width: 100%;
+    /* Ширина за всю ширину вікна */
+    background: #272727;
+    max-width: 100%;
+    z-index: 100;
 }

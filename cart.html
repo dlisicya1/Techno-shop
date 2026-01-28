@@ -16,41 +16,33 @@
 <body>
   <!-- Тіло: увесь вміст сторінки -->
   <!-- Тіло: увесь вміст сторінки -->
-  <header class="container fixed">
-    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+ 
+  <header class="fixed">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container">
-        <a class="navbar-brand" href="index.html"><img class='logo' src='img/logo_white.png' height="50px"
-            alt='logo'></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <a class="navbar-brand" href="index.html">
+          TechnoShop
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class='nav-link' href='index.html#products'>Товари</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href='#about'>Про нас</a>
-            </li>
 
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav me-auto">
             <li class="nav-item">
-              <a class="nav-link" href='#support'>Підтримка</a>
+              <a class="nav-link" href="#products">Товари</a>
             </li>
           </ul>
 
-          <button class="cart-btn" id="cartBtn">
-            Кошик
-            <svg xmlns="http://www.w3.org/2000/svg" class="bell" width="24" height="24" viewBox="0 0 24 24" fill="none"
-              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-              class="icon icon-tabler icons-tabler-outline icon-tabler-shopping-cart">
-              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-              <path d="M6 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
-              <path d="M17 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
-              <path d="M17 17h-11v-14h-2" />
-              <path d="M6 5l14 1l-1 7h-13" />
-            </svg>
-            </li>
+          <form id="searchForm" class="d-flex me-3">
+            <input class="form-control me-2" type="search" placeholder="Пошук">
+            <button class="btn btn-outline-light" type="submit">Знайти</button>
+          </form>
+
+          <button class="cart-btn btn btn-outline-light" id="cartBtn">
+            <i class="bi bi-cart3"></i>
+            <span class="cart-counter">0</span>
           </button>
         </div>
       </div>
